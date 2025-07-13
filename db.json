@@ -2,7 +2,7 @@
   "todos": [
     {
       "id": "2e5f",
-      "title": "Tập thể dục buổi sáng",
+      "title": "Tập thể dục buổi sáng1",
       "completed": true
     },
     {
@@ -13,11 +13,6 @@
     {
       "id": "3b08",
       "title": "Hoàn thành Todo List JS JsonServer + Vite với GPT",
-      "completed": false
-    },
-    {
-      "id": "7c29",
-      "title": "Push repo Todo lên GitHub",
       "completed": false
     },
     {
