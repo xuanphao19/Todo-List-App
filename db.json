@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": "2e5f",
+      "title": "Tập thể dục buổi sáng",
+      "completed": true
+    },
+    {
+      "id": "d19f",
+      "title": "10 phút thời sự",
+      "completed": true
+    },
+    {
+      "id": "3b08",
+      "title": "Hoàn thành Todo List JS JsonServer + Vite với GPT",
+      "completed": false
+    },
+    {
+      "id": "7c29",
+      "title": "Push repo Todo lên GitHub",
+      "completed": false
+    },
+    {
+      "id": "8b01",
+      "title": "Dọn dẹp thư mục project",
+      "completed": false
+    }
+  ]
+}
