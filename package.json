@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "vite --open",
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist",
-    "start": "concurrently \"vite --open\" \"json-server --watch db.json --port 3000\""
+    "open": "concurrently \"vite --open\" \"json-server --watch db.json --port 3000\""
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

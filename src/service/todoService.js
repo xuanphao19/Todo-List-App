@@ -2,7 +2,8 @@
 import { apiRequest } from "../api/apiHelper";
 
 // const BASE_URL = "http://localhost:3000/todos";
-const BASE_URL = "https://json-server-api-3zhm.onrender.com/todos";
+// const BASE_URL = "https://json-server-api-3zhm.onrender.com/todos";
+const BASE_URL = "https://json-server-api-production-5a96.up.railway.app/todos";
 
 export const todoService = {
   getAll: () => apiRequest("get", BASE_URL),

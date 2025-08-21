@@ -2,6 +2,7 @@ import { todoService } from "../../service/todoService";
 
 const TodoApp = {
   currentTab: "all",
+
   init() {
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
@@ -43,9 +44,9 @@ const TodoApp = {
       li.innerHTML = `
       <span class="${todo.completed ? "line-through" : ""}">${todo.title}</span>
       <div class="ctrl flex space-x-2" data-id="${todo.id}">
-        <button class="edit-btn bg-yellow-500 text-white px-2 py-1 rounded hover:bg-yellow-600">Edit</button>
-        <button class="btn delete-btn bg-red-500 text-white p-1 rounded hover:bg-red-600">
-          <svg class="svg-icon card-icon"><use xlink:href="#delete"></use></svg>
+        <button class="edit-btn bg-yellow-500 text-white px-2 py-1 rounded hover:bg-yellow-400">Edit</button>
+        <button class="btn delete-btn bg-red-100 text-white p-1 rounded hover:bg-red-200">
+          <svg class="svg-icon card-icon"><use xlink:href="#trash"></use></svg>
         </button>
         <button class="btn toggle-btn bg-green-500 text-white p-1 rounded hover:bg-green-600">
           <svg class="svg-icon card-icon">
@@ -157,3 +158,8 @@ const TodoApp = {
 };
 
 document.addEventListener("DOMContentLoaded", TodoApp.init());
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  console.log(";(node);", e);
+});
